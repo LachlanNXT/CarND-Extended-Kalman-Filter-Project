@@ -9,3 +9,10 @@ Things to note:
 * make sure to update the previous timestamp when initialising
 * we have a good idea of initial position and speed, so P matrix can be initialised with smaller values
 * make sure to check for numerical stability, i.e. no divide by zeros - Hj, h(x).
+
+Here is an example of running the simulator with this code:
+
+[//]: # (Image References)
+[image1]: ./Simulator.png
+
+![alt text][image1]
