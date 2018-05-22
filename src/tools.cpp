@@ -63,9 +63,9 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 	float c3 = (c1*c2);
 
 	//check division by zero
-	if(fabs(c1) < 0.0001){
+	if(fabs(c1) < 0.001){
 		cout << "CalculateJacobian () - Error - Division by Zero" << endl;
-		return Hj;
+		c1 = 0.001;
 	}
 
 	//compute the Jacobian matrix
